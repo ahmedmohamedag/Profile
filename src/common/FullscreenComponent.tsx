@@ -37,9 +37,11 @@ const FullscreenComponent = () => {
     }, []);
 
     return (
-        <button onClick={handleFullscreenToggle} >
-            <Fullscreen />
-        </button>
+        <>
+            <button onClick={handleFullscreenToggle} className="hidden lg:block">
+                <Fullscreen />
+            </button>
+        </>
     );
 }
 

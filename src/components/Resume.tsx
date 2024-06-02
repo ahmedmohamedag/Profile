@@ -1,7 +1,7 @@
 
 const Resume = () => {
   return (
-    <button className="border-none outline-none capitalize">
+    <button className="hidden capitalize border-none outline-none lg:block">
       resume
     </button>
   )

@@ -1,30 +1,31 @@
+/* eslint-disable react-refresh/only-export-components */
 
 import { NavLink } from 'react-router-dom';
-import { navlinks } from '../data';
+// import { navlinks } from '../data';
+import { TFunction } from 'i18next';
+import { withTranslation } from 'react-i18next';
 interface I_Props {
-  className?: string
+  className?: string,
+  t: TFunction<"translation", undefined>,
 }
-const Sidbar = ({ className }: I_Props) => {
+const Sidbar = ({ className, t }: I_Props) => {
   return (
-    <aside className={`${className} p-8 sticky left-0 top-[58px] h-[calc(100vh-58px)]  flex flex-col items-center  bg-light dark:bg-dark text-dark dark:text-light`}>
+    <aside className={`${className}`}>
       <div className="flex flex-col items-center">
         <img src="logo.png" alt="" width={130} />
-        <h1 className='text-xl text-center'>Ahmed Mohamed</h1>
-        <h2 className='text-sm text-center dark:text-slate-300 text-[#a09f9f]'>Front-End Developer</h2>
+        <h1 className='text-xl text-center'>{t("name")}</h1>
+        <h2 className='text-sm text-center dark:text-slate-300 text-[#a09f9f]'>{t("position")}</h2>
 
       </div>
 
       <ul className='flex flex-col items-center gap-3 px-10 mt-5 '>
-        {
-          navlinks.map((link, id) => (
-
-            <NavLink key={id} to={link.path} className='text-2xl hover:text-main capitalize'>{link.title}</NavLink>
-          ))
-        }
-
+        <NavLink to="/" className='text-2xl capitalize hover:text-main'>{t("project")}</NavLink>
+        <NavLink to="services" className='text-2xl capitalize hover:text-main'>{t("services")}</NavLink>
+        <NavLink to="about" className='text-2xl capitalize hover:text-main'>{t("about")}</NavLink>
+        <NavLink to="contact" className='text-2xl capitalize hover:text-main '>{t("contact")}</NavLink>
       </ul>
     </aside>
   )
 }
 
-export default Sidbar
+export default withTranslation()(Sidbar)

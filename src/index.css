@@ -2,12 +2,41 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-header{
+
+
+body {
+    --sb-track-color: #232E33;
+    --sb-thumb-color: #49f15f;
+    --sb-size: 5px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 7px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+header {
     position: sticky;
     top: 0;
     z-index: 30;
 }
 
-.active{
+.active {
     color: #49f15f;
 }

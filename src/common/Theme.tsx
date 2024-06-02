@@ -11,16 +11,9 @@ const Theme = () => {
         }
     }, [darkMode]);
     return (
-        <div className="text-dark dark:text-light gap-2 border border-dark rounded-3xl flex px-5 py-1 dark:border-light outline-none">
-            <button onClick={() => setDarkMode(false)}>
-                <Sun />
-            </button>
-            <button onClick={() => setDarkMode(true)}>
-                <Moon />
-            </button>
-
-
-            {/* <Languages/> */}
+        <div className="flex px-5 py-1 border outline-none text-dark dark:text-light border-dark rounded-3xl dark:border-light">
+                <button onClick={() => setDarkMode(false)} className="border-r pe-2 border-r-main"><Sun /></button>
+                <button onClick={() => setDarkMode(true)} className=" ps-2"><Moon /></button>
         </div>
     )
 }
