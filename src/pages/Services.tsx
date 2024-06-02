@@ -1,10 +1,17 @@
+/* eslint-disable react-refresh/only-export-components */
 
-const Services = () => {
+import { TFunction } from 'i18next';
+import { withTranslation } from 'react-i18next';
+
+const Services = ({t}:{t:TFunction<"translation", undefined>}) => {
+
   return (
-    <div>
-      Services
+    <div className='h-[calc(100vh)]'>
+      <h1 className='text-3xl text-center py-6 font-semibold text-main'>{t("soon")}</h1>
     </div>
   )
 }
 
-export default Services
+  
+  export default withTranslation()(Services)
+  

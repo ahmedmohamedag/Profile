@@ -1,10 +1,17 @@
+/* eslint-disable react-refresh/only-export-components */
 
-const Resume = () => {
+import { TFunction } from 'i18next';
+import { withTranslation } from 'react-i18next';
+
+const Resume =  ({t}:{t:TFunction<"translation", undefined>}) => {
   return (
     <button className="hidden capitalize border-none outline-none lg:block">
-      resume
+      {t("resume")}
     </button>
   )
 }
 
-export default Resume
+export default withTranslation()(Resume)
+
+
+

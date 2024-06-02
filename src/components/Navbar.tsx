@@ -7,9 +7,6 @@ import Language from "../common/Language"
 import { Menu, X } from "lucide-react"
 import Sidbar from "./Sidbar"
 import { useState } from "react"
-
-
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (

@@ -60,3 +60,57 @@ export const contactData:ContactDATA[] = [
         url:"https://mail.google.com/mail/u/0/?fs=1&to=ahmedmohamedprofile@gmail.com&tf=cm",
     },
 ]
+
+export const tabsTitle =[
+    {
+        title:"all",
+    },
+    {
+        title:"react",
+    },
+    {
+        title:"next",
+    },
+    {
+        title:"tasks",
+    },
+    {
+        title:"strapi",
+    },
+    {
+        title:"vanilla",
+    },
+
+
+
+
+]
+
+export const projectsData =[
+    
+    {
+        image:"projects/change-bg.png",
+        title:"change bg",
+        type :"tasks",
+        demo:"https://github.com/ahmedmohamedag/change-bg ",
+        repo:"https://github.com/ahmedmohamedag/change-bg",
+        tolls:[""]
+    },
+    {
+        image:"projects/hero-section.png",
+        title:"hero section",
+        type :"tasks",
+        demo:"https://ahmedmohamedag.github.io/simble-task/",
+        repo:"https://github.com/ahmedmohamedag/simble-task",
+        tolls:["html","css"]
+    },
+    {
+        image:"projects/wealthWise.png",
+        title:"wealth wise",
+        type :"react",
+        demo:"https://wealth-wise-indol.vercel.app/",
+        repo:"https://github.com/ahmedmohamedag/WealthWise",
+        tolls:["react","tailwind"]
+    },
+ 
+]

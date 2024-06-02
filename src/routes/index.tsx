@@ -14,12 +14,12 @@ import Notfound from "../pages/Notfound"
 const router = createBrowserRouter((createRoutesFromElements(
     <>
         <Route path="/" element={<RoutLatout />}>
-            <Route index element={<Projects />}/>
-            <Route path="about" element={<About />}/>
-            <Route path="services" element={<Services />}/>
-            <Route path="contact" element={<Contact />}/>
+            <Route index element={<Projects />} />
+            <Route path="about" element={<About />} />
+            <Route path="services" element={<Services />} />
+            <Route path="contact" element={<Contact />} />
         </Route>
-        <Route path="*" element={<Notfound/>}/>
+        <Route path="*" element={<Notfound />} />
     </>
 )))
 

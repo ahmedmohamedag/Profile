@@ -4,13 +4,14 @@ import { NavLink } from 'react-router-dom';
 // import { navlinks } from '../data';
 import { TFunction } from 'i18next';
 import { withTranslation } from 'react-i18next';
+import { navlinks } from '../data';
 interface I_Props {
   className?: string,
   t: TFunction<"translation", undefined>,
 }
 const Sidbar = ({ className, t }: I_Props) => {
   return (
-    <aside className={`${className}`}>
+    <aside  className={`${className}`}>
       <div className="flex flex-col items-center">
         <img src="logo.png" alt="" width={130} />
         <h1 className='text-xl text-center'>{t("name")}</h1>
@@ -19,10 +20,19 @@ const Sidbar = ({ className, t }: I_Props) => {
       </div>
 
       <ul className='flex flex-col items-center gap-3 px-10 mt-5 '>
-        <NavLink to="/" className='text-2xl capitalize hover:text-main'>{t("project")}</NavLink>
+        
+          {
+            navlinks.map((link,id)=>(
+              <NavLink key={id} to={link.path}className='text-2xl capitalize hover:text-main'>{t(link.title)}</NavLink>
+
+            ))
+          }
+        
+
+{/* 
         <NavLink to="services" className='text-2xl capitalize hover:text-main'>{t("services")}</NavLink>
         <NavLink to="about" className='text-2xl capitalize hover:text-main'>{t("about")}</NavLink>
-        <NavLink to="contact" className='text-2xl capitalize hover:text-main '>{t("contact")}</NavLink>
+        <NavLink to="contact" className='text-2xl capitalize hover:text-main '>{t("contact")}</NavLink> */}
       </ul>
     </aside>
   )
