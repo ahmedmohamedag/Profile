@@ -40,3 +40,6 @@ header {
 .active {
     color: #49f15f;
 }
+#resumeView,#overLay{
+    background-color: rgba(60, 150, 161, 0.103);
+}
