@@ -8,7 +8,7 @@ const Contact = () => {
 
   return (
     <div className='flex items-start pt-24'>
-      <Linkes flexdie='flex-col'/>
+      <Linkes flexdie='flex-col' status='flex'/>
     </div>
   )
 }

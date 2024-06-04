@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom"
 import { contactData } from "../data"
 interface I_Props{
-    flexdie?:"flex-col"|"flex-eow"
+    flexdie?:"flex-col"|"flex-eow",
+    status?:"hidden"|"flex"
 }
-const Linkes = ({flexdie}:I_Props) => {
+const Linkes = ({flexdie,status="hidden"}:I_Props) => {
     return (
-        <div className={`items-center hidden gap-4 lg:flex ${flexdie}`}>
+        <div className={`items-center ${status} gap-4 lg:flex ${flexdie}`}>
             {
                 contactData.map((icon, id) => (
 
