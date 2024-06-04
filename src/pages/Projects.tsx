@@ -13,12 +13,12 @@ const Projects = ({ t }: I_Props) => {
 
 
   return (
-    <div  className="min-h-screen px-8">
-      <HeroTitle >
-        {t("projectTitle")}
-      </HeroTitle>
-      <Tabs />
-    </div>
+      <div className="min-h-screen px-8">
+        <HeroTitle >
+          {t("projectTitle")}
+        </HeroTitle>
+        <Tabs />
+      </div>
   )
 }
 
