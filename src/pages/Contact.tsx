@@ -1,13 +1,14 @@
 /* eslint-disable react-refresh/only-export-components */
 
-import { TFunction } from 'i18next';
+// import { TFunction } from 'i18next';
 import { withTranslation } from 'react-i18next';
-
-const Contact = ({t}:{t:TFunction<"translation", undefined>}) => {
+import Linkes from '../components/Linkes';
+// {t}:{t:TFunction<"translation", undefined>}
+const Contact = () => {
 
   return (
-    <div className='h-[calc(100vh)]'>
-      <h1 className='text-3xl text-center py-6 font-semibold text-main'>{t("soon")}</h1>
+    <div className='flex items-start pt-24'>
+      <Linkes flexdie='flex-col'/>
     </div>
   )
 }
