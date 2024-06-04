@@ -16,7 +16,8 @@ const Sidbar = ({ className, t }: I_Props) => {
         <img src="logo.png" alt="" width={130} />
         <h1 className='text-xl text-center'>{t("name")}</h1>
         <h2 className='text-sm text-center dark:text-slate-300 text-[#a09f9f]'>{t("position")}</h2>
-
+        <h2 className='text-sm text-center dark:text-slate-300 text-[#7c7a7a]' dir='ltr'>+201151101537</h2>
+        
       </div>
 
       <ul className='flex flex-col items-center gap-3 px-10 mt-5 '>
@@ -28,11 +29,6 @@ const Sidbar = ({ className, t }: I_Props) => {
             ))
           }
         
-
-{/* 
-        <NavLink to="services" className='text-2xl capitalize hover:text-main'>{t("services")}</NavLink>
-        <NavLink to="about" className='text-2xl capitalize hover:text-main'>{t("about")}</NavLink>
-        <NavLink to="contact" className='text-2xl capitalize hover:text-main '>{t("contact")}</NavLink> */}
       </ul>
     </aside>
   )

@@ -18,7 +18,8 @@ const Resume = ({ t }: { t: TFunction<"translation", undefined> }) => {
       <button onClick={() => {
         resumeViewHandler(true)
       }}
-        className="hidden capitalize border-none outline-none cursor-pointer lg:block">
+        className="hidden px-5 py-1 capitalize border outline-none cursor-pointer lg:block border-dark rounded-3xl dark:border-light hover:text-main"
+        >
         {t("resume")}
       </button>
       <div id='resumeView' className={` ${!view ? "hidden" : "fixed"}   inset-0`}>

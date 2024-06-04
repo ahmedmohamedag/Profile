@@ -5,6 +5,7 @@ import Language from "../common/Language"
 import { Menu, X } from "lucide-react"
 import Sidbar from "./Sidbar"
 import { useState } from "react"
+import Linkes from "./Linkes"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
@@ -13,6 +14,8 @@ const Navbar = () => {
         {/*  */}
         <Resume />
         
+        <Linkes/>
+
         <div className="flex items-center justify-between w-full gap-3 px-2 lg:w-fit">
           <div className="flex px-5 py-1 border outline-none text-dark dark:text-light border-dark rounded-3xl dark:border-light">
             <Language />

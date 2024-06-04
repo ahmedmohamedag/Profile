@@ -4,7 +4,6 @@ import { Fragment } from "react/jsx-runtime"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Sidbar from "../components/Sidbar"
-import Linkes from "../components/Linkes"
 
 const RoutLatout = () => {
     return (
@@ -19,7 +18,6 @@ const RoutLatout = () => {
                     <Outlet />
                 </div>
             </div>
-            <Linkes/>
             <Footer />
         </Fragment>
     )

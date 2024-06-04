@@ -66,14 +66,14 @@ const About = ({ t }: { t: TFunction<"translation", undefined> }) => {
       {/* about me */}
       <div className="">
         <h2 className='pb-4 text-2xl font-semibold capitalize'>{t("biome")}</h2>
-        <p className='w-full text-xl leading-7 '>{t("bio")}</p>
+         <p className='w-full mx-auto text-xl leading-7 md:w-[60%]'>{t("bio")}</p> 
       </div>
       {/* skills */}
       <div className="">
         <h2 className='py-4 text-2xl font-semibold capitalize'>{t("skills")}</h2>
 
 
-        <div dir='ltr' className="container py-8 mx-auto px-8">
+        <div dir='ltr' className="container py-8 mx-auto w-[300px] md:w-full">
           <Marquee
             gradient={false}
             speed={100}
@@ -88,7 +88,7 @@ const About = ({ t }: { t: TFunction<"translation", undefined> }) => {
                 key={id}>
                 <div className="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
                   <div className="flex -translate-y-[1px] justify-center">
-                    <div className="w-3/4">
+                    <div className="w-3/4 ">
                       <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
                     </div>
                   </div>
