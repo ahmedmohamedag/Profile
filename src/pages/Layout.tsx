@@ -4,13 +4,14 @@ import { Fragment } from "react/jsx-runtime"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Sidbar from "../components/Sidbar"
+import Linkes from "../components/Linkes"
 
 const RoutLatout = () => {
     return (
         <Fragment>
             <Navbar />
             <div className="grid lg:grid-cols-12">
-                <Sidbar className="col-span-12 shadow-md hidden  lg:col-span-2 p-8 
+                <Sidbar  className="col-span-12 shadow-md hidden  lg:col-span-2 p-8 
                 sticky left-0 top-[58px] h-[calc(100vh-58px)]  lg:flex flex-col 
                 items-center  bg-light dark:bg-dark text-dark
                  dark:text-light right-0" />
@@ -18,6 +19,7 @@ const RoutLatout = () => {
                     <Outlet />
                 </div>
             </div>
+            <Linkes/>
             <Footer />
         </Fragment>
     )

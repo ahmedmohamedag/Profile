@@ -11,7 +11,7 @@ interface I_Props {
 }
 const Sidbar = ({ className, t }: I_Props) => {
   return (
-    <aside  className={`${className}`}>
+    <aside className={`${className}`}>
       <div className="flex flex-col items-center">
         <img src="logo.png" alt="" width={130} />
         <h1 className='text-xl text-center'>{t("name")}</h1>

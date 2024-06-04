@@ -38,37 +38,39 @@ export const navlinks:NavLink[]=[
 
 export const contactData:ContactDATA[] = [
     {
-        logo: "whatsapp.png",
-        url: "https://api.whatsapp.com/send/?phone=201151101537&text&type=phone_number&app_absent=0 ",
-    },
-    {
         logo: "messenger.png",
         url: "https://m.me/ahmedmohamedagg",
     },
     {
+        logo: "5whatsapp.png",
+        url: "https://api.whatsapp.com/send/?phone=201151101537&text&type=phone_number&app_absent=0 ",
+    },
+ 
+    {
         logo: "github.png",
         url: "https://github.com/ahmedmohamedag ",
     },
-    {
-        logo: "facebook.png",
-        url: "https://web.facebook.com/ahmedmohamedagg",
-    },
+   
     {
         logo: "linkedin.png",
         url: "https://www.linkedin.com/in/ahmedmohamedagg/ ",
     },
     {
-        logo: "youtube.png",
-        url: "https://www.youtube.com/@ahmedmohamedagg ",
+        logo: "facebook.png",
+        url: "https://web.facebook.com/ahmedmohamedagg",
     },
-    {
-        logo: "telegram.png",
-        url: "http://t.me/ahmedmohamedag ",
-    },
-    {
-        logo: "gmail.png",
-        url:"https://mail.google.com/mail/u/0/?fs=1&to=ahmedmohamedprofile@gmail.com&tf=cm",
-    },
+    // {
+    //     logo: "youtube.png",
+    //     url: "https://www.youtube.com/@ahmedmohamedagg ",
+    // },
+    // {
+    //     logo: "telegram.png",
+    //     url: "http://t.me/ahmedmohamedag ",
+    // },
+    // {
+    //     logo: "gmail.png",
+    //     url:"https://mail.google.com/mail/u/0/?fs=1&to=ahmedmohamedprofile@gmail.com&tf=cm",
+    // },
 ]
 
 export const tabsTitle =[
@@ -102,7 +104,7 @@ export const projectsData:project[] =[
         image:"projects/change-bg.png",
         title:"change bg",
         type :"tasks",
-        demo:"https://github.com/ahmedmohamedag/change-bg ",
+        demo:"https://ahmedmohamedag.github.io/change-bg/",
         repo:"https://github.com/ahmedmohamedag/change-bg",
         tolls:["css","html"]
     },

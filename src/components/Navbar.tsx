@@ -1,7 +1,5 @@
-import { Link } from "react-router-dom"
 import Theme from "../common/Theme"
 import Resume from "./Resume"
-import { contactData } from "../data"
 import FullscreenComponent from "../common/FullscreenComponent"
 import Language from "../common/Language"
 import { Menu, X } from "lucide-react"
@@ -14,15 +12,7 @@ const Navbar = () => {
       <nav className="container flex items-center justify-between py-3 mx-auto ">
         {/*  */}
         <Resume />
-        <div className="items-center hidden gap-4 lg:flex ">
-          {
-            contactData.map((icon, id) => (
-
-              <Link to={icon.url} target="_blank" key={id}><img src={icon.logo} loading="lazy" width={30} alt={icon.logo} /></Link>
-            ))
-          }
-        </div>
-
+        
         <div className="flex items-center justify-between w-full gap-3 px-2 lg:w-fit">
           <div className="flex px-5 py-1 border outline-none text-dark dark:text-light border-dark rounded-3xl dark:border-light">
             <Language />

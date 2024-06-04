@@ -3,7 +3,12 @@
 @import 'tailwindcss/utilities';
 
 
+:root{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
 
+
+}
 body {
     --sb-track-color: #232E33;
     --sb-thumb-color: #49f15f;
@@ -40,6 +45,6 @@ header {
 .active {
     color: #49f15f;
 }
-#resumeView,#overLay{
-    background-color: rgba(60, 150, 161, 0.103);
+#resumeView{
+    background-color: rgba(60, 149, 161, 0.521);
 }
