@@ -6,7 +6,7 @@ interface ContactDATA {
     logo: string,
     url: string,
 }
-type talls = "html" | "css" | "javascript" | "tailwind" | "react" | "bootstrap" | "next"
+type talls = "html" | "css" | "javascript" | "tailwind" | "react" | "bootstrap" | "next"|"typscript"
 interface project {
     image: string,
     title: string,
@@ -101,6 +101,14 @@ export const tabsTitle = [
 export const projectsData: project[] = [
 
 
+    {
+        image: "projects/elprof.png",
+        title: "el Prof",
+        type: "react",
+        demo: "https://el-prof.vercel.app/",
+        repo: "https://github.com/ahmedmohamedag/el-prof",
+        tolls: ["tailwind","react","typscript"]
+    },
     {
         image: "projects/hero-section.png",
         title: "hero section",
